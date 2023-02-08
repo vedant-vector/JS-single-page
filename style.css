@@ -1,0 +1,95 @@
+body {
+  width: auto;
+}
+
+#navBar {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+#simform-logo {
+  display: inline;
+  height: 45px;
+}
+
+#nav-div {
+  float: right;
+
+  /* display: flex;
+  list-style: none;
+  justify-content: flex-end; */
+}
+
+#nav-div ul {
+  list-style: none;
+  margin-right: 100px;
+}
+
+#nav-div li {
+  float: left;
+  padding-right: 30px;
+  color: rgb(239, 83, 102);
+}
+
+h2 {
+  text-align: center;
+  color: rgb(239, 83, 102);
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+.details {
+  box-sizing: border-box;
+}
+
+#content {
+  height: max-content;
+  display: flex;
+}
+
+#yes {
+  box-sizing: border-box;
+  width: 30%;
+}
+#no {
+  box-sizing: border-box;
+  width: 70%;
+}
+
+.images-slide {
+  border: 2px solid black;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  min-height: 300px;
+  min-width: 500px;
+}
+
+.imageSlides {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.imageSlides img {
+  height: 100%;
+  width: 100%;
+}
+
+.previous {
+  margin-left: -60px;
+  margin-top: 30%;
+  /* z-index: 100; */
+  position: absolute;
+}
+
+.next {
+  margin-left: 110%;
+  margin-top: 30%;
+  /* z-index: 100; */
+  position: absolute;
+}
+
+.imgs {
+  display: none;
+}
