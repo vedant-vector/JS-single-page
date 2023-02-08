@@ -5,13 +5,16 @@ body {
 #navBar {
   width: 100%;
   border-bottom: 1px solid black;
+  background-color:rgb(232, 230, 221);
 }
 
 #simform-logo {
   display: inline;
   height: 45px;
 }
-
+.rightPanel ul li{
+  list-style:disc;
+}
 #nav-div {
   float: right;
 
@@ -30,12 +33,20 @@ body {
   padding-right: 30px;
   color: rgb(239, 83, 102);
 }
-
+a{
+  text-decoration: none;
+}
 h2 {
   text-align: center;
   color: rgb(239, 83, 102);
   text-decoration: underline;
   font-weight: 300;
+  border-top: 2px solid black;
+  padding-top: 10px;
+}
+
+#home{
+  border-top: none;
 }
 
 .details {
@@ -47,15 +58,25 @@ h2 {
   display: flex;
 }
 
-#yes {
+#imgWork{
+  width: 80%;
+}
+.leftPanel {
   box-sizing: border-box;
   width: 30%;
 }
-#no {
+.rightPanel {
   box-sizing: border-box;
   width: 70%;
 }
+h3{
+    color: rgb(239, 83, 102);
+  text-decoration: underline;
+}
 
+p{
+  text-align: justify;
+}
 .images-slide {
   border: 2px solid black;
   width: fit-content;
@@ -92,4 +113,8 @@ h2 {
 
 .imgs {
   display: none;
+}
+
+#first-im{
+  display: block;
 }

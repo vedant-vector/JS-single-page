@@ -50,7 +50,12 @@ function show(num) {
   }
   if (num >= 0) {
     index = num;
+    cnt = 0;
     slides[index].style.display = "block";
+    if(index!==2) slides[index+1].style.display = "none";
+    if(index!==0) slides[index-1].style.display = "none";
+    if(index==0) slides[index+2].style.display = "none";   
+    
   }
 }
 pre.addEventListener("click", () => {
@@ -62,5 +67,8 @@ pre.addEventListener("click", () => {
 next.addEventListener("click", () => {
   cnt++;
   index += cnt;
+  if(index>2){
+    index=0;
+  }
   show(index);
 });
